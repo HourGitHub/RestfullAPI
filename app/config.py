@@ -1,0 +1,11 @@
+import os
+
+basedir = os.path.abspath(os.path.dirname(__file__))
+
+class Config:
+    SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'restfulapi.db')
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
+    SECRET_KEY = '225ce1d2cd729b06bc6e0a7cd6681a14e7a77072af2def28cbbd02e631a312b24d2b0946ac2982b0e705e5a4018476409a065849e5fee86b5d8b2abc8d1b6a7d59f3adf921df47449be0467b1e87339f9343ab8a54c0c21acd0734b429c9c0ceb21b889bb94cb115d2c02656a686cb12be1a88fbbcb2671d2a418cb940c479b5f9528b21e3fd2758fa7bb859eb5609e29177f753e5dbeb630aa2e039f2ede553372949ac68fd947ab5a79db0d53bce6c77e2723942feae8bb78493943cd94c5d42639f7006b21b0c7c6ea23b7f140826283eb4a1009f7b89b9d5f8a9f75e022add604ad9fa8979b6540c7dfd2e9b0b1a597fed6492af2562172a1ccc87969930'
+
+
+
